@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Doe via Pix | Instituto Rope</title>
+
+  <meta name="description" content="Doe via Pix para o Instituto Rope e ajude a realizar sonhos de pacientes em tratamento de saúde.">
+  <meta name="theme-color" content="#ff7a00">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="fundo"></div>
+  <div class="escurecer"></div>
+
+  <main class="pagina">
+
+    <section class="hero">
+      <img src="imagens/logo.png" alt="Logo do Instituto Rope" class="logo">
+
+      <h1>
+        AJUDE A<br>
+        <span>REALIZAR</span><br>
+        SONHOS
+      </h1>
+
+      <p class="impacto">
+        Com a sua ajuda, continuamos realizando sonhos e criando memórias
+        inesquecíveis para pacientes em tratamento de saúde.
+      </p>
+    </section>
+
+    <section class="card">
+      <div class="coracao">❤</div>
+
+      <h2>DOE VIA <span>PIX</span></h2>
+
+      <p class="subtitulo">
+        Aponte a câmera do seu celular para o QR Code abaixo
+        ou copie nossa chave Pix.
+      </p>
+
+      <div class="area-pix">
+        <div class="qr-box">
+          <img src="imagens/qrcode-pix.png" alt="QR Code Pix para doação ao Instituto Rope">
+        </div>
+
+        <div class="chave-box">
+          <h3>CHAVE PIX (CNPJ)</h3>
+
+          <div id="pix" class="chave">31.020.520/0001-90</div>
+
+          <button onclick="copiarPix()">📋 COPIAR CHAVE PIX</button>
+
+          <a
+            class="whatsapp"
+            href="https://wa.me/5521998730052?text=Olá!%20Acabei%20de%20realizar%20uma%20doação%20para%20o%20Instituto%20Rope."
+            target="_blank">
+            💬 Informar doação no WhatsApp
+          </a>
+
+          <p class="seguro">🔒 Sua doação é segura e faz toda a diferença!</p>
+        </div>
+      </div>
+
+      <h3 class="titulo-dados">DADOS BANCÁRIOS</h3>
+
+      <div class="dados">
+        <div>
+          <span>🏦</span>
+          <small>BANCO</small>
+          <strong>CORA SCFI - 404</strong>
+        </div>
+
+        <div>
+          <span>🏢</span>
+          <small>AGÊNCIA</small>
+          <strong>0001</strong>
+        </div>
+
+        <div>
+          <span>💳</span>
+          <small>CONTA</small>
+          <strong>2327692-8</strong>
+        </div>
+
+        <div>
+          <span>👤</span>
+          <small>INSTITUIÇÃO</small>
+          <strong>Instituto Rope</strong>
+        </div>
+      </div>
+
+      <div class="aviso">
+        Antes de confirmar sua doação, verifique se o recebedor aparece como
+        <strong>Instituto Rope</strong>.
+      </div>
+    </section>
+
+    <footer>
+      <p>Instituto Rope realiza sonhos</p>
+      <small>CNPJ: 31.020.520/0001-90</small>
+    </footer>
+
+  </main>
+
+  <div id="toast" class="toast">
+    ✅ Chave copiada com sucesso!
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
