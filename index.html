@@ -6,89 +6,95 @@
 
   <title>Doe via Pix | Instituto Rope</title>
 
-  <meta name="description" content="Doe via Pix para o Instituto Rope e ajude a realizar sonhos de pacientes em tratamento de saúde.">
-  <meta name="theme-color" content="#ff7a00">
+  <meta name="description" content="Doe via Pix para o Instituto Rope e ajude a transformar sonhos em momentos inesquecíveis para pessoas em tratamento de doenças graves.">
+  <meta name="theme-color" content="#17072f">
 
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+  <a href="#conteudo-principal" class="pular-conteudo">Pular para o conteúdo</a>
+
   <div class="fundo"></div>
   <div class="escurecer"></div>
 
-  <main class="pagina">
+  <main class="pagina" id="conteudo-principal" tabindex="-1">
 
     <section class="hero">
-      <img src="imagens/logo.png" alt="Logo do Instituto Rope" class="logo">
+      <img src="imagens/logo.png" alt="Instituto Rope" class="logo">
 
-      <h1>
-        AJUDE A<br>
-        <span>REALIZAR</span><br>
-        SONHOS
-      </h1>
+      <p class="identidade-discreta">Instituto Rope &middot; Organização sem fins lucrativos</p>
+
+      <h1>Ajude um sonho<br>a continuar.</h1>
 
       <p class="impacto">
-        Com a sua ajuda, continuamos realizando sonhos e criando memórias
-        inesquecíveis para pacientes em tratamento de saúde.
+        Sua contribuição ajuda o Instituto Rope a transformar sonhos em
+        momentos inesquecíveis para pessoas em tratamento de doenças graves.
       </p>
     </section>
 
-    <section class="card">
-      <div class="coracao">❤</div>
+    <section class="card" aria-labelledby="titulo-doacao">
+      <div class="coracao" aria-hidden="true">❤</div>
 
-      <h2>DOE VIA <span>PIX</span></h2>
+      <h2 id="titulo-doacao">Doe via <span>Pix</span></h2>
 
       <p class="subtitulo">
-        Aponte a câmera do seu celular para o QR Code abaixo
-        ou copie nossa chave Pix.
+        Doe o valor que puder. Cada contribuição nos ajuda a continuar
+        realizando sonhos.
       </p>
 
-      <div class="area-pix">
-        <div class="qr-box">
-          <img src="imagens/qrcode-pix.png" alt="QR Code Pix para doação ao Instituto Rope">
-        </div>
-
+      <div class="area-pix" id="chave-pix">
         <div class="chave-box">
-          <h3>CHAVE PIX (CNPJ)</h3>
+          <h3>Chave Pix oficial do Instituto Rope</h3>
+
+          <p class="chave-legenda">CNPJ</p>
 
           <div id="pix" class="chave">31.020.520/0001-90</div>
 
-          <button onclick="copiarPix()">📋 COPIAR CHAVE PIX</button>
+          <button type="button" class="btn-copiar" onclick="copiarPix()">
+            <span aria-hidden="true">📋</span> Copiar chave Pix
+          </button>
+
+          <p class="seguro"><span aria-hidden="true">🔒</span> Sua doação vai direto para a conta oficial do Instituto Rope.</p>
+        </div>
+
+        <div class="instrucao-box">
+          <p class="instrucao-titulo">Próximo passo</p>
+          <p class="instrucao-texto">Depois de pagar, envie o comprovante para nossa equipe confirmar sua doação.</p>
 
           <a
             class="whatsapp"
-            href="https://wa.me/5521998730052?text=Olá!%20Acabei%20de%20realizar%20uma%20doação%20para%20o%20Instituto%20Rope."
-            target="_blank">
-            💬 Informar doação no WhatsApp
+            href="https://wa.me/5521994141333?text=Ol%C3%A1!%20Acabei%20de%20realizar%20uma%20doa%C3%A7%C3%A3o%20para%20o%20Instituto%20Rope."
+            target="_blank"
+            rel="noopener">
+            <span aria-hidden="true">💬</span> Enviar comprovante pelo WhatsApp
           </a>
-
-          <p class="seguro">🔒 Sua doação é segura e faz toda a diferença!</p>
         </div>
       </div>
 
-      <h3 class="titulo-dados">DADOS BANCÁRIOS</h3>
+      <h3 class="titulo-dados">Dados bancários</h3>
 
       <div class="dados">
         <div>
-          <span>🏦</span>
+          <span aria-hidden="true">🏦</span>
           <small>BANCO</small>
           <strong>CORA SCFI - 404</strong>
         </div>
 
         <div>
-          <span>🏢</span>
+          <span aria-hidden="true">🏢</span>
           <small>AGÊNCIA</small>
           <strong>0001</strong>
         </div>
 
         <div>
-          <span>💳</span>
+          <span aria-hidden="true">💳</span>
           <small>CONTA</small>
           <strong>2327692-8</strong>
         </div>
 
         <div>
-          <span>👤</span>
+          <span aria-hidden="true">👤</span>
           <small>INSTITUIÇÃO</small>
           <strong>Instituto Rope</strong>
         </div>
@@ -100,16 +106,35 @@
       </div>
     </section>
 
-    <footer>
-      <p>Instituto Rope realiza sonhos</p>
-      <small>CNPJ: 31.020.520/0001-90</small>
-    </footer>
+    <section class="confianca" aria-labelledby="titulo-confianca">
+      <h2 id="titulo-confianca">Transparência e confiança</h2>
+
+      <div class="confianca-grid">
+        <div class="confianca-item">
+          <span aria-hidden="true">🏛️</span>
+          <p><strong>Instituto Rope</strong><br>CNPJ 31.020.520/0001-90</p>
+        </div>
+
+        <div class="confianca-item">
+          <span aria-hidden="true">🔒</span>
+          <p>Doação direta via Pix, sem intermediários.</p>
+        </div>
+
+        <div class="confianca-item">
+          <span aria-hidden="true">💬</span>
+          <p>Confirmação humana do comprovante pela nossa equipe.</p>
+        </div>
+      </div>
+    </section>
 
   </main>
 
-  <div id="toast" class="toast">
-    ✅ Chave copiada com sucesso!
-  </div>
+  <footer>
+    <p>Instituto Rope realiza sonhos</p>
+    <small>CNPJ: 31.020.520/0001-90</small>
+  </footer>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
 
   <script src="script.js"></script>
 </body>
